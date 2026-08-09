@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ben Assor, Computer Science graduate, London</title>
+<meta name="description" content="Ben Assor, Computer Science graduate from the University of Nottingham. Python, SQL, machine learning. Looking for a graduate role in London.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="nebula" aria-hidden="true"></div>
+<canvas id="stars" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a class="nav-mark" href="#top">Ben <b>Assor</b></a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#languages">Languages</a>
+      <a href="#projects">Projects</a>
+      <a href="#outside">Outside code</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+  <header class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Based in London</p>
+        <h1>Ben Assor</h1>
+        <p class="hero-role">Computer Science graduate</p>
+        <p class="hero-lede">
+          I like building systems and solving problems. I've spent the last four years doing that
+          on my course and in my own time, and I'm looking for a graduate role where I can carry on.
+        </p>
+        <div class="contact">
+          <button id="copyEmail" data-email="Benassor24@gmail.com">Benassor24@gmail.com</button>
+          <a href="https://www.linkedin.com/in/ben-assor" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GitHub</a>
+          <a href="bens_cv.pdf">CV (PDF)</a>
+        </div>
+      </div>
+
+      <figure class="photo" id="photo">
+        <img id="photoImg" src="me.jpg" alt="Ben Assor">
+        <figcaption class="photo-empty">
+          save your photo<br>as <b>me.jpg</b><br>next to index.html
+        </figcaption>
+      </figure>
+    </div>
+  </header>
+
+  <div class="wrap">
+
+    <section class="sec" id="about">
+      <div class="sec-label"><span class="eyebrow">About</span></div>
+      <div class="sec-body">
+        <div class="prose reveal">
+          <p>
+            I graduated from the <strong>University of Nottingham</strong> this year with a
+            <strong>Master's in Computer Science</strong>. It was a four year integrated course.
+            I went into it knowing I liked programming and came out with a much better idea of
+            which parts I like most.
+          </p>
+          <p>
+            The modules I got the most out of were <strong>machine learning</strong>,
+            <strong>AI methods</strong>, <strong>advanced data structures and algorithms</strong>
+            and <strong>operating systems and concurrency</strong>. I also covered software
+            engineering, computer security and the maths that sits underneath all of it.
+          </p>
+          <p>
+            The part I enjoy most is working out how something should fit together. How data moves
+            through a system, why a program is slower than it should be, or what an algorithm is
+            actually doing once you stop reading the description and trace through it properly.
+            I would rather understand something fully than get it working and move on.
+          </p>
+          <p>
+            Most of what I know outside the course came from building things I wanted to exist.
+            Some of those are below.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="languages">
+      <div class="sec-label"><span class="eyebrow">Languages &amp; tools</span></div>
+      <div class="sec-body">
+        <div class="reveal">
+          <p class="filter-hint">Tap one to highlight the projects it's used in.</p>
+
+          <div class="lang-tier">
+            <h4>Most at home in</h4>
+            <div class="chips">
+              <button class="chip" data-skill="python" aria-pressed="false">Python</button>
+              <button class="chip" data-skill="sql" aria-pressed="false">SQL</button>
+            </div>
+          </div>
+
+          <div class="lang-tier">
+            <h4>Comfortable with</h4>
+            <div class="chips">
+              <button class="chip" data-skill="java" aria-pressed="false">Java</button>
+              <button class="chip" data-skill="c#" aria-pressed="false">C#</button>
+              <button class="chip" data-skill="javascript" aria-pressed="false">JavaScript</button>
+            </div>
+          </div>
+
+          <div class="lang-tier">
+            <h4>Worked with</h4>
+            <div class="chips">
+              <button class="chip" data-skill="c" aria-pressed="false">C</button>
+              <button class="chip" data-skill="c++" aria-pressed="false">C++</button>
+              <button class="chip" data-skill="haskell" aria-pressed="false">Haskell</button>
+              <button class="chip" data-skill="arm assembly" aria-pressed="false">ARM Assembly</button>
+            </div>
+          </div>
+
+          <div class="lang-tier">
+            <h4>Libraries &amp; tools</h4>
+            <div class="chips">
+              <button class="chip" data-skill="pandas" aria-pressed="false">pandas</button>
+              <button class="chip" data-skill="numpy" aria-pressed="false">NumPy</button>
+              <button class="chip" data-skill="scikit-learn" aria-pressed="false">scikit-learn</button>
+              <button class="chip" data-skill="xgboost" aria-pressed="false">XGBoost</button>
+              <button class="chip" data-skill="librosa" aria-pressed="false">librosa</button>
+              <button class="chip" data-skill="sqlalchemy" aria-pressed="false">SQLAlchemy</button>
+              <button class="chip" data-skill="git" aria-pressed="false">Git</button>
+              <button class="chip" data-skill="unity" aria-pressed="false">Unity</button>
+              <button class="chip" data-skill="linux" aria-pressed="false">Linux CLI</button>
+            </div>
+          </div>
+
+          <div class="filter-status" id="filterStatus">
+            <span id="filterText"></span>
+            <button id="clearFilter">Clear</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- to add a project, copy a card and set data-skills to match the chips above.
+         put the real repo in the entry-link href, or delete that line if there isn't one -->
+    <section class="sec" id="projects">
+      <div class="sec-label"><span class="eyebrow">Projects</span></div>
+      <div class="sec-body">
+
+        <article class="entry reveal" data-skills="python,scikit-learn,xgboost,pandas,numpy">
+          <div class="entry-head">
+            <h3 class="entry-role">Phishing URL detection</h3>
+            <p class="entry-meta">Python · ML</p>
+          </div>
+          <ul class="bullets">
+            <li>Built features out of URL structure, then trained, tuned and compared several classifiers. XGBoost performed best with an F1 of 0.97.</li>
+            <li>Used Wilcoxon signed rank testing to check the differences between models were actually significant. Written up as an IEEE format paper.</li>
+          </ul>
+          <div class="entry-foot">
+            <div class="tags">
+              <span class="tag">scikit-learn</span><span class="tag">XGBoost</span><span class="tag">Feature engineering</span>
+            </div>
+            <a class="entry-link" href="https://github.com/YOUR-USERNAME/REPO" target="_blank" rel="noopener">
+              View code <span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="entry reveal" data-skills="python,librosa,numpy">
+          <div class="entry-head">
+            <h3 class="entry-role">Multi-agent pursuit-evasion</h3>
+            <p class="entry-meta">Python · AI</p>
+          </div>
+          <ul class="bullets">
+            <li>Cooperating hunter agents track evasive targets using sight and sound. A trained CNN recognises audio cues, a Kalman filter predicts where the target is heading, and A* handles navigation around obstacles.</li>
+            <li>The hardest part was getting the three to agree, since a confident prediction and a noisy measurement often pull in different directions.</li>
+          </ul>
+          <div class="entry-foot">
+            <div class="tags">
+              <span class="tag">CNN</span><span class="tag">Kalman filter</span><span class="tag">A* search</span><span class="tag">librosa</span>
+            </div>
+            <a class="entry-link" href="https://github.com/YOUR-USERNAME/REPO" target="_blank" rel="noopener">
+              View code <span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="entry reveal" data-skills="python,scikit-learn">
+          <div class="entry-head">
+            <h3 class="entry-role">Conversational AI assistant</h3>
+            <p class="entry-meta">Python · NLP</p>
+          </div>
+          <ul class="bullets">
+            <li>Plans a user's timetable through natural dialogue. It works out what the user is asking for using TF-IDF vectorisation and cosine similarity, then matches that to the right action.</li>
+          </ul>
+          <div class="entry-foot">
+            <div class="tags">
+              <span class="tag">TF-IDF</span><span class="tag">NLP</span>
+            </div>
+            <a class="entry-link" href="https://github.com/YOUR-USERNAME/REPO" target="_blank" rel="noopener">
+              View code <span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="sec" id="outside">
+      <div class="sec-label"><span class="eyebrow">Outside code</span></div>
+      <div class="sec-body">
+        <div class="hobbies reveal">
+          <div class="hobby">
+            <span class="num">01</span>
+            <h4>Football</h4>
+            <p>I play and I watch. Best way I know to switch off after a long day at a screen.</p>
+          </div>
+          <div class="hobby">
+            <span class="num">02</span>
+            <h4>Chess</h4>
+            <p>Similar appeal to debugging. A position looks fine until you spot the one move that breaks it.</p>
+          </div>
+          <div class="hobby">
+            <span class="num">03</span>
+            <h4>Guitar</h4>
+            <p>Self taught and still working at it. Not great yet, but better than I was last year.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="contact">
+      <div class="sec-label"><span class="eyebrow">Contact</span></div>
+      <div class="sec-body">
+        <div class="reveal">
+          <p class="contact-line">
+            I'm looking for a graduate role in software or data, ideally in London.
+            Email is the quickest way to reach me.
+          </p>
+          <div class="contact">
+            <a href="mailto:Benassor24@gmail.com">Benassor24@gmail.com</a>
+            <a href="https://www.linkedin.com/in/ben-assor" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <p>Ben Assor, London</p>
+    <p><a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GitHub</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
